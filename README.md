@@ -21,5 +21,4 @@ WebOS Desktop is a web-based application that mimics the appearance and function
    npm install
 
 3. **Run WebOS:**
-   ```bash
-   npm start
+   open src/index.html
