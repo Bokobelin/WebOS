@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px); /* Leave space for the taskbar */
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.task {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 64px;
+    height: 64px;
+}
+
+.window {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.window-header {
+    background: #333;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.window-content {
+    padding: 10px;
+}
+
+textarea {
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#toolbar-sections {
+    display: flex;
+    flex-grow: 1;
+}
+
+.toolbar-section {
+    margin-right: 20px;
+}
+
+.toolbar-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.toolbar-button:hover {
+    background-color: #555;
+}
+
+/* Adjust desktop height to accommodate toolbar */
+#desktop {
+    top: 40px;
+    height: calc(100% - 80px); /* Leave space for the toolbar and taskbar */
+}
+
+#toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#toolbar-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#toolbar-sections {
+    display: flex;
+    flex-grow: 1;
+}
+
+.toolbar-section {
+    margin-right: 20px;
+}
+
+.toolbar-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.toolbar-button:hover {
+    background-color: #555;
+}
+
+/* Adjust desktop height to accommodate toolbar */
+#desktop {
+    top: 40px;
+    height: calc(100% - 80px); /* Leave space for the toolbar and taskbar */
+}
+
+textarea {
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 20px); /* Adjust height to fit textarea */
+}
