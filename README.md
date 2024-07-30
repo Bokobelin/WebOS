@@ -1,11 +1,17 @@
-# WebOS
-Un OS en HTML, CSS et JS.
+# WebOS Desktop
 
-# Dépendances
--npm (souvent installé avec Node.js)
--un navigateur web moderne
+WebOS Desktop is a web-based application that mimics the appearance and functionality of an operating system desktop. It uses HTML, CSS, and JavaScript to create a dynamic and interactive user experience.
 
-# Installation
-Clonez ce repo avec git (pour contribuer) ou téléchargez le .zip puis:
--éxécutez 'npm install' pour installer les dépendances.
--éxécutez 'npm run' pour ouvrir dans le navigateur.
+## Features
+
+- Desktop environment with icons
+- Clickable icons to open windows
+- Draggable and resizable windows (with jQuery UI)
+- Customizable background and icons
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/WebOS-Desktop.git
+   cd WebOS-Desktop```
