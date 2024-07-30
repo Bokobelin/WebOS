@@ -14,4 +14,4 @@ WebOS Desktop is a web-based application that mimics the appearance and function
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/WebOS-Desktop.git
-   cd WebOS-Desktop```
+   cd WebOS-Desktop
